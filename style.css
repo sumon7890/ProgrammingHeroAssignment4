@@ -124,3 +124,52 @@ a.active {
 .incrise_decrise {
   cursor: pointer;
 }
+/*///////*/
+.TotalEconomy {
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: -5px;
+}
+.TotalEconomy2 {
+  padding: 5px;
+  margin-left: 212px;
+  margin-top: -5px;
+}
+.Subtotal {
+  padding: 5px;
+  margin-left: 206px;
+  margin-top: -5px;
+}
+.tex {
+  padding: 5px;
+  margin-left: 106px;
+  margin-top: -5px;
+}
+.total {
+  padding: 5px;
+  margin-left: 249px;
+  margin-top: -5px;
+}
+.box {
+  border: 1px solid green;
+  padding: 45px;
+  width: 700px;
+  margin-top: 23px;
+  margin: auto;
+}
+.headingTotal {
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 40px;
+  font-size: xxx-large;
+}
+.mainHeading {
+  text-align: center;
+  margin-top: 55px;
+}
+#reportSection {
+  display: none;
+  cursor: pointer;
+  background-color: seashell;
+  overflow: scroll;
+}
