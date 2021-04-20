@@ -80,7 +80,7 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
         let ticketsInput2 = document.getElementById('economyClassInputValue');
         let ticketsCount2 = parseInt(ticketsInput2.value); 
         document.getElementById('totalEconomyClass').innerText = ticketsCount2;
-        const economyTk = ticketsCount2 *100
+        const economyTk = ticketsCount2 * 100
         const economyClassVatTk = Math.round(economyTk * 0.1)
     
         const totalTex = firstClassVatTk + economyClassVatTk;
