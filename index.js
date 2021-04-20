@@ -75,19 +75,21 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
         let ticketsCount = parseInt(ticketsInput.value); 
         document.getElementById('totalFirstClass').innerText =ticketsCount;
         const firstTk = ticketsCount * 150 ;
-        const firstClassVatTk = Math.round(firstTk * 0.1)
+        // const firstClassVatTk = Math.round(firstTk * 0.1)
     
         let ticketsInput2 = document.getElementById('economyClassInputValue');
         let ticketsCount2 = parseInt(ticketsInput2.value); 
         document.getElementById('totalEconomyClass').innerText = ticketsCount2;
         const economyTk = ticketsCount2 * 100
-        const economyClassVatTk = Math.round(economyTk * 0.1)
+        // const economyClassVatTk = Math.round(economyTk * 0.1)
     
-        const totalTex = firstClassVatTk + economyClassVatTk;
-        document.getElementById('texTotal').innerText = totalTex
-    
+       
         const SubTotalTk = firstTk + economyTk ;
         document.getElementById('subTotalTk').innerText = SubTotalTk
+        
+        const totalTex = Math.round(SubTotalTk * 0.1)
+        document.getElementById('texTotal').innerText = totalTex
+    
     
         const allTotalTk = SubTotalTk + totalTex ;
         document.getElementById('allTotalTk').innerText = allTotalTk;
