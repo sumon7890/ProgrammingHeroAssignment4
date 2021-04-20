@@ -6,25 +6,24 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
     newticketsCount = ticketsCount + 1;  
     ticketsInput.value = newticketsCount
     newticketsTotal = newticketsCount * 150;
-    //document.getElementById('subTotal').innerText = newticketsTotal
+    
     calculator()
      
     })
     const firstTicketDeCrises = document.getElementById('deCrises').addEventListener('click',function(){
-    
     let ticketsInput = document.getElementById('firstClassInputValue');
     let ticketsCount = parseInt(ticketsInput.value); 
     let newticketsCount = ticketsCount  
     newticketsCount = ticketsCount - 1;  
     ticketsInput.value = newticketsCount
     newticketsTotal = newticketsCount * 150;
-    //document.getElementById('subTotal').innerText = newticketsTotal  
+      
     calculator()
     
     })
     
     const economyTicketInCrises = document.getElementById('economyInCrises').addEventListener('click',function(){
-    
+
     let ticketsInput = document.getElementById('economyClassInputValue');
     let ticketsCount = parseInt(ticketsInput.value); 
     let newticketsCount = ticketsCount  
@@ -32,7 +31,7 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
     ticketsInput.value = newticketsCount
     newticketsTotal2 = newticketsCount * 100;
     calculator()
-    //document.getElementById('subTotal').innerText = newticketsTotal2
+    
     
     })
     const economyTicketDeCrises = document.getElementById('economyDeCrises').addEventListener('click',function(){
@@ -45,7 +44,8 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
     newticketsTotal2 = newticketsCount * 100;
     calculator()
     
-    })       
+    })
+
     function calculator(){
     let ticketsInputFirstClass = document.getElementById('firstClassInputValue');
     let ticketsCountFirstClass = parseInt(ticketsInputFirstClass.value); 
@@ -81,7 +81,7 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
         let ticketsCount2 = parseInt(ticketsInput2.value); 
         document.getElementById('totalEconomyClass').innerText = ticketsCount2;
         const economyTk = ticketsCount2 *100
-        const economyClassVatTk = Math.round(firstTk * 0.1)
+        const economyClassVatTk = Math.round(economyTk * 0.1)
     
         const totalTex = firstClassVatTk + economyClassVatTk;
         document.getElementById('texTotal').innerText = totalTex
@@ -93,3 +93,16 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
         document.getElementById('allTotalTk').innerText = allTotalTk;
     })
     
+/////////////////////////////////////////////////////////////////////////////////////////////////
+    function firstClass(IsIncise){ 
+        let ticketsInput = document.getElementById('firstClassInputValue');
+        let ticketsCount = parseInt(ticketsInput.value); 
+            let newticketsCount = ticketsCount  
+            ticketsInput.value = newticketsCount
+            if(IsIncise == true){
+                newticketsCount = ticketsCount + 1; 
+            } else if(IsIncise == false){
+                newticketsCount = ticketsCount - 1; 
+            }
+            
+        }
