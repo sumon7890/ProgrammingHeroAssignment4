@@ -1,3 +1,5 @@
+//https://github.com/sumon7890/ProgrammingHeroAssignment4
+
 const firstTicketInCrises = document.getElementById('inCrises').addEventListener('click',function(){
     let ticketsInput = document.getElementById('firstClassInputValue');
     let ticketsCount = parseInt(ticketsInput.value); 
@@ -104,15 +106,15 @@ const firstTicketInCrises = document.getElementById('inCrises').addEventListener
         });
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-function firstClass(IsIncise){ 
-    let ticketsInput = document.getElementById('firstClassInputValue');
-    let ticketsCount = parseInt(ticketsInput.value); 
-        let newticketsCount = ticketsCount  
-        ticketsInput.value = newticketsCount
-        if(IsIncise == true){
-            newticketsCount = ticketsCount + 1; 
-        } else if(IsIncise == false){
-            newticketsCount = ticketsCount - 1; 
-        }
+// function firstClass(IsIncise){ 
+//     let ticketsInput = document.getElementById('firstClassInputValue');
+//     let ticketsCount = parseInt(ticketsInput.value); 
+//         let newticketsCount = ticketsCount  
+//         ticketsInput.value = newticketsCount
+//         if(IsIncise == true){
+//             newticketsCount = ticketsCount + 1; 
+//         } else if(IsIncise == false){
+//             newticketsCount = ticketsCount - 1; 
+//         }
         
-    }
+//     }
