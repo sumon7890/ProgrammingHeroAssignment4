@@ -33,11 +33,14 @@ nav ul li a {
   color: #fff;
   padding: 10px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 nav ul li a:hover,
 a.active {
   background-color: #3352f2;
   border-radius: 5px;
+  color: #f3f5ff;
+  text-decoration: none;
 }
 .main-content {
   display: grid;
@@ -121,34 +124,29 @@ a.active {
   display: flex;
   justify-content: space-between;
 }
+
+/*///////*/
 .incrise_decrise {
   cursor: pointer;
 }
-/*///////*/
-.TotalEconomy {
+.TotalEconomy .TotalEconomy2 .Subtotal.tex.total {
   padding: 5px;
-  margin-left: 150px;
   margin-top: -5px;
+}
+.TotalEconomy {
+  margin-left: 150px;
 }
 .TotalEconomy2 {
-  padding: 5px;
   margin-left: 212px;
-  margin-top: -5px;
 }
 .Subtotal {
-  padding: 5px;
   margin-left: 206px;
-  margin-top: -5px;
 }
 .tex {
-  padding: 5px;
   margin-left: 106px;
-  margin-top: -5px;
 }
 .total {
-  padding: 5px;
   margin-left: 249px;
-  margin-top: -5px;
 }
 .box {
   border: 1px solid green;
@@ -171,5 +169,12 @@ a.active {
   display: none;
   cursor: pointer;
   background-color: seashell;
-  overflow: scroll;
+}
+#aginbooing {
+  text-align: center;
+  margin: auto;
+  padding: 12px;
+  background-color: blue;
+  margin-top: 10px;
+  margin-left: 890px;
 }
